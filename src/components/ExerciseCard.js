@@ -14,7 +14,7 @@ const ExerciseCard = ({ exercise }) => {
                 {exercise.target}
             </Button>
         </Stack>
-        <Typography ml="21px" mt="11px" pb="10px" color="#000" textTransform="capitalize" fontWeight="bold" fontSize="18px" sx={{ fontSize: { lg: '20px', xs: '20px' } }} >
+        <Typography ml="21px" mt="11px" pb="10px" color="#000" textTransform="capitalize" fontWeight="bold" fontSize="18px" sx={{ fontSize: { lg: '20px', xs: '20px' }  }} fontFamily="Poppins" >
             {exercise.name}
         </Typography>
         

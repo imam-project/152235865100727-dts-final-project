@@ -5,18 +5,17 @@ import Home from "./pages/Home";
 import ExerciseDetail from "./pages/ExerciseDetail";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import './App.css';
-
+import "./App.css";
 
 function App() {
 	return (
-		<Box width="100%" sx={{width: {xl: '100%'}}} m = "auto">
-			<Navbar/>
+		<Box width="100%" sx={{ width: { xl: "100%" } }} m="auto">
+			<Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/exercise/:id" element={<ExerciseDetail />} />
 			</Routes>
-      <Footer/>
+			<Footer />
 		</Box>
 	);
 }

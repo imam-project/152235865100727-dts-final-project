@@ -15,7 +15,7 @@ const BodyPart = ({item, setBodyPart, bodyPart}) => {
         className='bodyPart-card'
         sx={{
             borderTop: bodyPart === item ? '4px solid #30475E' : '',
-            backgroundColor: '#ffff',
+            backgroundColor: '#30475E',
             borderBottomLeftRadius: '20px',
             width: '270px',
             height: '280px',
@@ -30,7 +30,7 @@ const BodyPart = ({item, setBodyPart, bodyPart}) => {
         <img src={icon} alt="icon" style={{
             width: '40px', height: '40px',
         }}/>
-        <Typography fontSize='24px' fontWeight="bold" color='#30475E' textTransform="capitalize">
+        <Typography fontSize='24px' fontWeight="bold" color='#fff' textTransform="capitalize" fontFamily="Poppins">
             {item}
         </Typography>
 

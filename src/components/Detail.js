@@ -25,13 +25,13 @@ const Detail = ({exerciseDetail}) => {
     ]
 
   return (
-    <Stack gap="60px" sx={{flexDirection: {lg: 'row'}, p: '20px', alignItems: 'center'}}>
+    <Stack gap="60px" sx={{flexDirection: {lg: 'row'}, p: '20px', alignItems: 'center'}} key="">
         <img src={gifUrl} alt={name} loading="lazy" className="detail-image" />
         <Stack sx={{ gap: {lg: '35px', xs: '20px'}}}>
-            <Typography variant="h2">
+            <Typography variant="h2" fontFamily="Poppins" fontWeight="bolder">
                 {name}
             </Typography>
-            <Typography variant="h6" >
+            <Typography variant="h6" fontFamily="Poppins">
                 Make your body Healty and Strong,
                 by doing <span style={{color: '#F05454'}}>{name}</span> {` `}, will  make your <span style={{color: '#F05454'}}>{target}</span> good. And get the Strong and Healty body.
             </Typography>
@@ -40,7 +40,7 @@ const Detail = ({exerciseDetail}) => {
                     <Button sx={{background: '#F05454', width:"50px", height: '50px'}}>
                         <img src={item.icon} style={{width: '40px', height: '40px'}} alt={bodyPart}/>
                     </Button>
-                    <Typography textTransform="capitalize" variant="h5">
+                    <Typography textTransform="capitalize" variant="h5" fontFamily="Poppins" fontWeight="bold">
                         {item.name}
                     </Typography>
 
