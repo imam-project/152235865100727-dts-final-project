@@ -17,7 +17,7 @@ body {
   width: 0px;
 } */
 .react-horizontal-scrolling-menu--wrapper {
-	width: 1750px;
+	width: 100%;
 	display: flex;
   margin-bottom: 15px;
 }
