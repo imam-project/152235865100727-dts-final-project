@@ -40,7 +40,7 @@ const UserLog = () => {
         onClick={handleMenu}
         color="primary"
       >
-        <AccountCircle fontSize="inherit" />
+        <AccountCircle style={{ fontSize: '30', color: 'white'}} fontSize="inherit" />
       </IconButton>
       <Menu
         id="menu-appbar"

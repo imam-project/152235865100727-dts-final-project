@@ -13,7 +13,7 @@ function Navbar() {
 				<img src={Logo} alt="logo" style={{ width: "48px", height: "48px", margin: "0 20px" }} />
 			</Link>
 			<Stack direction="row" gap="40px" fontSize="20px"
-			alignItems="flex-end">
+			alignItems="flex-end" justifyContent="center">
 				<Link to="/" style={{ textDecoration: "none", color: "#ffff", borderBottom: "3px solid #F05454" }}>
 					Home
 				</Link>

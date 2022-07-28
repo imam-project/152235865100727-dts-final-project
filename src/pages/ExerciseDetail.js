@@ -6,7 +6,7 @@ import { exerciseOptions, fetchData, youtubeOptions } from '../fetch/fetchData';
 import Detail from '../components/Detail';
 import ExerciseVideos from '../components/ExerciseVideos';
 import SimilarExercises from '../components/SimilarExercises';
-
+import Navbar from '../components/Navbar'
 
 const ExerciseDetail = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
@@ -41,6 +41,7 @@ const ExerciseDetail = () => {
 
   return (
     <Box>
+      <Navbar />
       <Detail exerciseDetail={exerciseDetail}/>
       <ExerciseVideos exerciseVideos={exerciseVideos} name={exerciseDetail.name}/>
       <SimilarExercises targetMuscleExercises={targetMuscleExercises} equipmentExercises={equipmentExercises} />

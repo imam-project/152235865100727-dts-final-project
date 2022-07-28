@@ -11,6 +11,7 @@ import * as React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import bg from "../assets/bg.jpg";
 
+
 import { auth } from "../auth/firebase";
 
 const Login = () => {
@@ -56,25 +57,26 @@ const Login = () => {
 						backgroundColor: "#30475E",
 						borderRadius: "15px",
 						height: "500px",
-						width: "700px",
+						width: "600px",
+						opacity: 0.9
 					}}
 				>
 					<Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
 						<LockOutlinedIcon />
 					</Avatar>
-					<Typography component="h1" variant="h5">
+					<Typography component="h1" variant="h5" color="#fff">
 						Sign in
 					</Typography>
 					<Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-						<TextField margin="normal" required fullWidth id="email" label="Email Address" name="email" autoComplete="email" autoFocus sx={{ backgroundColor: "#ffff" }} />
-						<TextField margin="normal" required fullWidth name="password" label="Password" type="password" id="password" autoComplete="current-password" sx={{ backgroundColor: "#ffff" }} />
+						<TextField margin="normal" required fullWidth id="email" label="Email Address" name="email" autoComplete="email" autoFocus sx={{ backgroundColor: "#ffff", border: 'none', borderRadius: '10px'}}  />
+						<TextField margin="normal" required fullWidth name="password" label="Password" type="password" id="password" autoComplete="current-password" sx={{ backgroundColor: "#ffff" , borderRadius: '10px'  }} />
 						<Typography color="red">{errorMessage}</Typography>
 						<Button type="submit" fullWidth variant="contained" sx={{ mt: 3, mb: 2 }}>
 							Sign In
 						</Button>
 						<Grid container>
 							<Grid item>
-								<Link to="/register">Don't have an account? Sign Up"</Link>
+								<Link to="/register" style={{ color: '#ffff'}}>Don't have an account? Sign Up"</Link>
 							</Grid>
 						</Grid>
 					</Box>

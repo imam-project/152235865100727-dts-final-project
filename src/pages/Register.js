@@ -2,13 +2,14 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { Paper } from "@mui/material";
+import bg from "../assets/bg.jpg";
 
 import { auth } from '../auth/firebase';
 
@@ -30,21 +31,40 @@ const Register = () => {
             setErrorMessage(error.message);
         }
     };
+    const styles = {
+		paperContainer: {
+			backgroundImage: `url(${bg})`,
+		},
+	};
 
     return (
-        <Container component="main" maxWidth="xs">
+        <Paper style={styles.paperContainer} sx={{ justifyContent: "center", alignItems: "center" }}>
+        <Box
+				sx={{
+					display: "flex",
+					flexDirection: "column",
+					alignItems: "center",
+					justifyContent: "center",
+					height: "1080px",
+				}}
+			>
             <Box
                 sx={{
-                    mt: 10,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
+                    display: "flex",
+						flexDirection: "column",
+						alignItems: "center",
+						justifyContent: "center",
+						backgroundColor: "#30475E",
+						borderRadius: "15px",
+						height: "500px",
+						width: "600px",
+						opacity: 0.9
                 }}
             >
                 <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
                     <LockOutlinedIcon />
                 </Avatar>
-                <Typography component="h1" variant="h5">
+                <Typography component="h1" variant="h5" color="#fff">
                     Sign up
                 </Typography>
                 <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
@@ -57,6 +77,7 @@ const Register = () => {
                                 label="Email Address"
                                 name="email"
                                 autoComplete="email"
+                                sx={{ backgroundColor: "#ffff", border: 'none', borderRadius: '10px'}}
                             />
                         </Grid>
                         <Grid item xs={12}>
@@ -68,6 +89,7 @@ const Register = () => {
                                 type="password"
                                 id="password"
                                 autoComplete="new-password"
+                                sx={{ backgroundColor: "#ffff" , borderRadius: '10px'  }}
                             />
                         </Grid>
                     </Grid>
@@ -82,14 +104,15 @@ const Register = () => {
                     </Button>
                     <Grid container justifyContent="flex-end">
                         <Grid item>
-                            <Link to="/login">
+                            <Link to="/login" style={{ color: '#ffff'}}>
                                 Already have an account? Sign in
                             </Link>
                         </Grid>
                     </Grid>
                 </Box>
             </Box>
-        </Container>
+        </Box>
+        </Paper>
     );
 }
 
