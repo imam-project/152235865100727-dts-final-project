@@ -4,13 +4,12 @@ import bg from "../assets/hero.jpg";
 
 const Hero = () => {
 	return (
-		<Box sx={{ display: "flex", alignItems:"center", ml: { sm: "100px" }, justifyContent: 'center'}} position="relative" color="#F05454" className="hero" >
-			<img src={bg} alt="hero" style={{ width: "750px", height: "500px" }} className="hero-img" />
+		<Box sx={{ display: "flex",  alignItems:"center", justifyContent: 'center', backgroundImage: `url(${bg})`, height: '800px', backgroundSize: '1500px 800px', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', }}  className="hero" >
 			<Stack alignItems="center" width="550px" justifyContent="center" ml="25px">
 				<Typography color="#30475E" fontWeight="600" fontSize="26px">
 					Let's Move
 				</Typography>
-				<Typography fontSize="22px" fontWeight={700} fontFamily="Poppins" lineHeight="35px"
+				<Typography fontSize="22px" fontWeight={700} fontFamily="Poppins" lineHeight="35px" color='#F05454'
 				sx={{ fontSize: { lg: '40px', xs: '40px' } }} mb="23px" mt="30px"
 				
 				>
