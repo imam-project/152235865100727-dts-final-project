@@ -5,8 +5,8 @@ import Loader from './Loader';
 const ExerciseVideos = ({exerciseVideos, name}) => {
     if (!exerciseVideos.length) return <Loader />;
   return (
-    <Box sx={{marginTop: { lg: '200px', xs: '20px'}, }} p="15px" >
-       <Typography variant="h3" mb="35px" fontWeight="bold">
+    <Box sx={{marginTop: { lg: '200px', xs: '20px'},  }} p="15px" >
+       <Typography variant="h3" mb="35px" fontWeight="bold" sx= {{ fontSize: {xs: '32px'}}}>
            <span style={{color: '#F05454', textTransform: 'capitalize'}}>{name}</span> exercise videos
         </Typography>
         <Stack justifyContent='flex-start' flexWrap='wrap' alignItems='center'

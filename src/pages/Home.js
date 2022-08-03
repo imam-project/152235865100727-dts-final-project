@@ -4,6 +4,7 @@ import Exercises from "../components/Exercises";
 import SearchExercises from "../components/SearchExercises";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
 			<Hero />
 			<SearchExercises setExercises={setExercises} bodyPart={bodyPart} setBodyPart={setBodyPart} />
 			<Exercises exercises={exercises} setExercises={setExercises} bodyPart={bodyPart} />
+			<Footer/>
 		</Box>
 	);
 };

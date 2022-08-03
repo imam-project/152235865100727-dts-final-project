@@ -38,7 +38,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
 	return (
 		<Stack alignItems="center" mt="30px" justifyContent="center" p="20px">
-			<Typography fontWeight={900} sx={{ fontSize: { lg: "45px", xs: "30px" } }} mb="50px" textAlign="center" fontFamily="Poppins">
+			<Typography fontWeight={900} sx={{ fontSize: { lg: "45px", xs: "20px" } }} mb="50px" textAlign="center" fontFamily="Poppins">
 				Here's Some Exercise for You
 			</Typography>
 			<Box position="relative" mb="75px" >

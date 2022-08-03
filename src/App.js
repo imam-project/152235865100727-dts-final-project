@@ -3,7 +3,6 @@ import { Route, Routes, Outlet } from "react-router-dom";
 import { Box } from "@mui/material";
 import Home from "./pages/Home";
 import ExerciseDetail from "./pages/ExerciseDetail";
-import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import "./App.css";
@@ -33,7 +32,7 @@ function App() {
 				<Route path="register" element ={
 				<Register/>} />
 			</Routes>
-			<Footer />
+
 		</Box>
 	);
 }
